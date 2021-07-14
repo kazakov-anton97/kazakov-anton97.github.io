@@ -9,6 +9,7 @@ import {openMenu} from '../redux/actions'
 import Clients from '../components/clients'
 import {addClassToCursor,removeClassFromCursor} from '../redux/actions'
 import { MOBILE_BREAKPOINT } from "../config"
+import {lazysizes} from "lazysizes"
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -276,7 +277,7 @@ class Home extends React.Component {
                       </Parallax>
                   </div>
                   <div className="col-md-6 even larger-cursor white-cursor">
-                        <Parallax bgImage="/images/portfolio/Santoor.jpg" bgImageAlt="langoor" strength={200} className="portfolio-item">
+                        <Parallax bgImage="/images/portfolio/Santoor.jpg" bgImageAlt="langoor" strength={200} className="portfolio-item lazyload">
                           <Link href="/projects/santoor">
                             <a>
                               <div className="p-info-wrapper format1">
@@ -290,7 +291,7 @@ class Home extends React.Component {
                         </Parallax>
                   </div>
                   <div className="col-md-6 odd larger-cursor white-cursor">
-                        <Parallax bgImage="/images/portfolio/VoiJeans.png" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`}>
+                        <Parallax bgImage="/images/portfolio/VoiJeans.png" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`} lazyload>
                           <Link href="/projects/voi-jeans">
                             <a>
                               <div className="p-info-wrapper format1">
@@ -335,7 +336,7 @@ class Home extends React.Component {
                         </Parallax>
                   </div>
                   <div className="col-md-6 even larger-cursor white-cursor">
-                        <Parallax bgImage="/images/portfolio/Graphics1.jpg" bgImageAlt="graphics" strength={200} className="portfolio-item">
+                        <Parallax bgImage="/images/portfolio/Graphics1.jpg" bgImageAlt="graphics" strength={200} className="portfolio-item lazyload">
                               <div className="p-info-wrapper format1">
                                 <div className="p-info">
                                   <div className="portfolio-title neufreit">Graphics 
@@ -422,7 +423,7 @@ class Home extends React.Component {
                 </ul>
               </div>
               <div className="service-image">
-                <img src="/images/services-bg-2.png" className="width-100"  alt='homecover'/>
+                <img data-src="/images/services-bg-2.png" className="width-100 lazyload"  alt='homecover'/>
               </div>
               <div className="show-mobile hide-desktop text-center" style={{marginTop:"7.2rem"}}>
                 <Arrow direction="down" />
@@ -430,7 +431,7 @@ class Home extends React.Component {
           </div>
           <div className="position-relative">
             <Clients />
-            <img src="/images/wave-black.gif" className="width-100 wave" alt='homecover' />
+            <img data-src="/images/wave-black.gif" className="width-100 wave lazyload" alt='homecover' />
           </div>
         </>
         )}
