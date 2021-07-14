@@ -1,0 +1,33 @@
+{
+  "name": "santoor_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
+    "@sanity/client": "^2.0.9",
+    "@sanity/image-url": "^0.140.19",
+    "@sendgrid/mail": "^7.4.0",
+    "@vimeo/player": "^2.14.1",
+    "express-validator": "^6.8.0",
+    "lodash": "^4.17.20",
+    "next": "9.5.2",
+    "next-redux-wrapper": "^6.0.2",
+    "react": "16.13.1",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-dom": "16.13.1",
+    "react-parallax": "^3.1.2",
+    "react-redux": "^7.2.1",
+    "react-slick": "^0.27.12",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "rellax": "^1.12.1",
+    "sass": "^1.26.10",
+    "slick-carousel": "^1.8.1"
+  }
+}
