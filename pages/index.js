@@ -88,7 +88,8 @@ class Home extends React.Component {
     window.addEventListener("resize", this.handleResize)
     // window.addEventListener("scroll", this.handleScroll)
     const loadingLogo = new Image();
-    loadingLogo.src = "/images/loading_logo.png";
+    loadingLogo.dataSrc = "/images/loading_logo.png";
+    loadingLogo.className = "lazyload";
     loadingLogo.onload = () => {
       this.setState({ loadingLogoReady: true });
     };
@@ -154,7 +155,7 @@ class Home extends React.Component {
         <>
           <div className={`${this.state.animate ? "animate" : ""}`}>
             <div className="loading-wrapper" style={{height:`${this.props.common.windowHeight}px`}}>
-                  <img src="/images/loading_logo.png" alt='homecover' />
+                  <img data-src="/images/loading_logo.png" className="lazyload" alt='homecover' />
             </div>
           </div>
           <div className={`top-section-wrapper black-cursor ${this.state.animate ? "animate" : ""}`} style={{ height: `${this.props.common.windowHeight}px` }}>
@@ -263,7 +264,7 @@ class Home extends React.Component {
                         </Parallax>
                   </div>
                   <div className="col-md-6 odd larger-cursor white-cursor">
-                      <Parallax bgImage="/images/portfolio/Chandrika3.jpg" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`}>
+                      <Parallax bgImage="/images/portfolio/Chandrika3.jpg" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`} lazyload>
                           <Link href="/projects/chandrika">
                             <a>
                               <div className="p-info-wrapper format1">
@@ -306,7 +307,7 @@ class Home extends React.Component {
                         </Parallax>
                   </div>
                   <div className="col-md-6 even larger-cursor white-cursor">
-                      <Parallax bgImage="/images/portfolio/Iceburg1.jpg" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`}>
+                      <Parallax bgImage="/images/portfolio/Iceburg1.jpg" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`} lazyload>
                           <Link href="/projects/iceburg">
                             <a>
                               <div className="p-info-wrapper format1">
@@ -321,7 +322,7 @@ class Home extends React.Component {
                         </Parallax>
                   </div>
                   <div className="col-md-6 odd mia-by-tanishq larger-cursor white-cursor">
-                        <Parallax bgImage="/images/portfolio/Mia1.jpg" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`}>
+                        <Parallax bgImage="/images/portfolio/Mia1.jpg" bgImageAlt="langoor" strength={200} className={`portfolio-item ${this.state.isMobile?"white-menu-btn":""}`} lazyload>
                           <Link href="/projects/mia-by-tanishq">
                             <a>
                               <div className="p-info-wrapper format1">
