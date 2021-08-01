@@ -105,6 +105,10 @@ a, a:hover, a:focus{
 	outline:none;
 	color:inherit;
 }
+.logo {
+	width: 220px;
+	height: 60px;
+}
 h1,h2, .footer_panel h4, #seller h3, .heading{
 	font-family: 'Oswald', sans-serif;
 	font-weight:bold;
@@ -245,7 +249,7 @@ p, .seller-slider .media-body .media-heading{
 	border:1px solid transparent;
 }
 .btn-light{
-	background:#78b5c7;
+	background: green;
 	border:1px solid transparent;
 }
 .btn-common{
@@ -532,7 +536,7 @@ header nav.navbar.bootsnav ul.nav > li > a:before,
 	margin-right:0;
 }
 .topbar .top_link li a:hover{
-	color:#79b6c8;
+	color: green;
 }
 
 .header-top-entry{
@@ -687,8 +691,8 @@ header ul.cart-list .cart-btn > a{
 }
 header ul.cart-list .cart-btn > a:hover, header ul.cart-list .cart-btn > a.active{
 	color:#fff !important;
-	border-color:#79b6c8 !important;
-	background:#79b6c8 !important;
+	border-color: green !important;
+	background: green !important;
 }
 header ul.cart-list .cart-btn > a:first-child{
 	margin-bottom:10px;
@@ -1664,7 +1668,7 @@ form.newsletter .input-group-addon:hover{
 /* ------------------ Page Header (inner pages) ------------------ */
 .page_header{
 	color:#fff;
-	background:url(../images/page-header.jpg) no-repeat;
+	background:url(../images/contact_banner.webp) no-repeat;
 	background-size:cover;
 	background-position:center center;
 }
@@ -1688,7 +1692,7 @@ form.newsletter .input-group-addon:hover{
   color:#606060
 }
 .page_menu .breadcrumb > .active {
-  color:#79b6c8;
+  color: green;
 }
 .header_layout2{
 	background:url(../images/newsler.jpg) no-repeat;
@@ -1821,7 +1825,7 @@ form.newsletter .input-group-addon:hover{
 }
 .cart-form .btn-dark:hover, .cart-form .btn-dark:focus,
 .contact-form .btn-dark:hover, .contact-form .btn-dark:focus{
-	background:#79B6C8;
+	background: green;
 }
 #cart .table-responsive > .table {
   margin-bottom: 0;
@@ -2031,7 +2035,7 @@ input[type="number"] {
   margin-right:30px;
 }
 .shop_tab .tabs li.active, .shop_tab .tabs li:hover, .shop_tab .tabs li:focus{
-	color:#79b6c8;
+	color: green;
 }
 .shop_tab .tab_content {
   padding: 20px 0;
@@ -2104,7 +2108,7 @@ input[type="number"] {
   position: absolute;
   top: 0;
   left: 0;
-  background: #79b6c8;
+  background: green;
 }
 .squaredFour label:after {
   content: '';
@@ -2137,7 +2141,7 @@ input[type="number"] {
 	display:block;
 }
 #cart .contact-form a{
-	color:#79b6c8;
+	color: green;
 	font-size:14px;
 	display:inline-block;
 	float:right;
@@ -2187,7 +2191,7 @@ input[type="number"] {
 	margin:0 13%;
 }
 #error .error_content p > a{
-	color:#79b6c8;
+	color: green;
 }
 .input-group-wrapper{
     vertical-align: middle;
@@ -2224,7 +2228,7 @@ input[type="number"] {
 	width:30px;
 	display:block;
 	margin-top:15px;
-	background:#303030;
+	background: green;
 }
 .contact-form label, .cart-form label{
   font-weight: bold;
@@ -2245,7 +2249,7 @@ input[type="number"] {
 	resize:none;
 }
 .contact-form .btn-form{
-	background:#79b6c8;
+	background: green;
 	color:#fff;
 	font-size:12px;
 	padding:12px 30px;
@@ -2259,7 +2263,7 @@ input[type="number"] {
 	overflow:hidden;
 }
 .contact_detail .address i {
-  color: #79b6c8;
+  color: green;
   float: left;
   font-size: 30px;
   margin-bottom: 30px;
@@ -2375,7 +2379,7 @@ footer.plain_footer{
 	margin-bottom:10px;
 }
 .footer_panel .account_foot li a:hover{
-	color:#79b6c8;
+	color: green;
 }
 .footer_panel .account_foot li a:before{
 	content:'';
